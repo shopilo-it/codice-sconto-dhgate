@@ -1,12 +1,12 @@
-# Cod reducere DHgate — fetch automat de pe shopilo.it
+# Codice sconto DHgate, recupero automatico da shopilo.it
 
-Modul Python pentru fetch automat de **coduri de reducere DHgate** de pe [shopilo.it](https://shopilo.it/magazin/dhgate.com). Returneaza **cupoane DHgate** active in format JSON, gata de integrat intr-un bot Telegram, extensie de browser sau orice alt tool.
+Modulo Python per il recupero automatico di **codici sconto DHgate** da [shopilo.it](https://shopilo.it/negozi/dhgate.com). Restituisce **coupon DHgate** attivi in formato JSON, pronto per l'integrazione in un bot Telegram, estensione del browser o qualsiasi altro strumento.
 
 **Pagina live:** [shopilo-it.github.io/codice-sconto-dhgate](https://shopilo-it.github.io/codice-sconto-dhgate/)
 
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue) ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-## Instalare
+## Installazione
 
 ```bash
 pip install requests beautifulsoup4
@@ -15,7 +15,7 @@ cd codice-sconto-dhgate
 python fetch.py
 ```
 
-## Output exemplu
+## Output di esempio
 
 ```json
 [
@@ -25,38 +25,38 @@ python fetch.py
     "discount": "10%",
     "description": "10% di sconto sul primo ordine",
     "expires": "2026-10-10",
-    "source": "https://shopilo.it/magazin/dhgate.com"
+    "source": "https://shopilo.it/negozi/dhgate.com"
   }
 ]
 ```
 
-## Cupoane DHgate disponibile
+## Coupon DHgate disponibili
 
-| Reducere | Descriere | Sursa |
+| Sconto | Descrizione | Fonte |
 |----------|-----------|-------|
-| 10% | 10% di sconto sul primo ordine | [shopilo.it](https://shopilo.it/magazin/dhgate.com) |
+| 10% | 10% di sconto sul primo ordine | [shopilo.it](https://shopilo.it/negozi/dhgate.com) |
 
-Codurile active: **[shopilo.it/magazin/dhgate.com](https://shopilo.it/magazin/dhgate.com)**
+Codici attivi: **[shopilo.it/negozi/dhgate.com](https://shopilo.it/negozi/dhgate.com)**
 
-## Intrebari frecvente
+## Domande frequenti
 
-### Cum folosesc un cod de reducere DHgate?
-Copiaza codul din tabelul de mai sus sau de pe [shopilo.it](https://shopilo.it/magazin/dhgate.com), adauga produsele in cos pe DHgate, si introdu codul la checkout in campul dedicat.
+### Come utilizzo un codice sconto DHgate?
+Copia il codice dalla tabella qui sopra o da [shopilo.it](https://shopilo.it/negozi/dhgate.com), aggiungi i prodotti al carrello su DHgate e inserisci il codice al checkout nel campo dedicato.
 
-### Cat timp sunt valabile cupoanele DHgate?
-Fiecare cupon are data de expirare afisata in coloana "Expira". Scriptul fetch.py returneaza doar cupoanele active la momentul rularii.
+### Quanto durano i coupon DHgate?
+Ogni coupon ha una data di scadenza indicata nella colonna "Scadenza". Lo script fetch.py restituisce solo i coupon attivi al momento dell'esecuzione.
 
-### Unde gasesc cele mai noi voucher-uri DHgate?
-Pagina [shopilo.it/magazin/dhgate.com](https://shopilo.it/magazin/dhgate.com) este actualizata zilnic cu cele mai noi cod reducere DHgate, voucher DHgate si cupon promotional DHgate.
+### Dove trovo i voucher DHgate piu recenti?
+La pagina [shopilo.it/negozi/dhgate.com](https://shopilo.it/negozi/dhgate.com) viene aggiornata quotidianamente con i codici sconto DHgate, voucher DHgate e coupon promozionali DHgate piu recenti.
 
-### Codul nu functioneaza. Ce fac?
-Verifica data de expirare si conditiile (valoare minima cos, produse eligibile). Unele coduri sunt valabile doar in aplicatia mobila sau pentru prima comanda.
+### Il codice non funziona. Cosa faccio?
+Verifica la data di scadenza e le condizioni (importo minimo del carrello, prodotti idonei). Alcuni codici sono validi solo nell'app mobile o per il primo ordine.
 
-## Despre DHgate
+## Informazioni su DHgate
 
-DHgate este unul dintre magazinele online populare. Gasesti pe [shopilo.it](https://shopilo.it/magazin/dhgate.com) cele mai bune cod reducere DHgate, cupoane DHgate verificate si voucher DHgate active, actualizate zilnic.
+DHgate e uno dei negozi online piu popolari. Su [shopilo.it](https://shopilo.it/negozi/dhgate.com) trovi i migliori codici sconto DHgate, coupon DHgate verificati e voucher DHgate attivi, aggiornati ogni giorno.
 
-## Instalare npm
+## Installazione npm
 
 ```bash
 npm install codice-sconto-dhgate
@@ -67,6 +67,6 @@ const { fetchCoupons } = require('codice-sconto-dhgate');
 fetchCoupons().then(data => console.log(data));
 ```
 
-## Licenta
+## Licenza
 
-MIT — date sursa de pe [shopilo.it](https://shopilo.it)
+MIT, dati prelevati da [shopilo.it](https://shopilo.it)
